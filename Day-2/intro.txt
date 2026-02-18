@@ -1,0 +1,69 @@
+here ipo ena na first edutha import.java.util.*;     irukuu
+import--na bring something from java libraryy
+
+java.util -- package , athula usefull classes la irukum 
+
+* -- all classes irukum
+ithu get input from the user apo tha ithu use pananum 
+
+-----------------------------------------------------
+public class Main
+{  
+    java program must be inside the class so thats why we create a class;
+    next-- Main (class name--must be First letter caps);
+
+}
+next ;
+
+
+{public static void main --- the hole time 
+
+java program is run by JVM (Java Virtual Machine), not by us.
+
+So JVM has some rules.
+public static void main exists because JVM demands it.
+}
+
+main-->
+What is main?
+
+main is a method;
+JVM always starts execution from main;-->Without main, JVM does not know where to start;
+--->>>(main is the entry point of a Java program.)
+
+public-->>
+accessible from everywhere
+❌ If you remove public:
+➡️ Runtime Error
+
+👉 --public allows JVM to access main.
+
+static-->>>
+static means no object needed.
+static allows JVM to call main without creating an object.
+
+void-->>
+void means returns nothing.
+JVM does not expect any value from main
+
+Program execution ends there
+
+👉 Simple line:
+
+void means main gives no output back to JVM.
+
+
+String[]args-->>
+It is an array of strings.
+Used to take command-line input.
+JVM passes arguments while running program
+String[] args stores command-line inputs.
+
+🧠 FULL MEANING IN ONE SENTENCE (IMPORTANT)
+
+public static void main is the method that JVM can access,
+ run without an object, return nothing, and start program execution.
+
+ ****--->>>>public static void main is the entry point of a Java program.
+It is public so JVM can access it, static so JVM can call it without creating an object,
+ and void because it does not return any value.
