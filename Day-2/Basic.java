@@ -1,5 +1,6 @@
+import java.util.*;
 public class Basic{
-    public  void main(String[]args){
+    public static void main(String[]args){
         System.out.println("hi");
-    }
+  }
 }

@@ -1,0 +1,125 @@
+        Data types and variables 
+       --------------------------------
+
+variables:
+   A box stores the Data
+   ex: 
+   int num=0;
+here int-->> data types ,
+num=variable name;  0-> value
+
+  Data types 
+  1. primitive data types
+  2.non primitive data types
+
+  1.primitive data types
+  These store simple values.
+
+There are 8 primitive types in Java.
+
+byte->short->int->long->float->double->char->boolean
+
+1️⃣ byte                                      
+➤ Size:1 byte (8 bits)
+➤ Range:-128 to 127
+➤ Used for:Very small numbers.
+
+2️⃣ short
+➤ Size:2 bytes
+➤ Range:-32,768 to 32,767
+➤ Used for:Small numbers (bigger than byte).
+
+3️⃣ int 
+➤ Size:4 bytes
+➤ Range:Around -2 billion to +2 billion
+➤ Used for:
+1.Age
+2.Marks
+3.Count
+4.Loop counters
+
+4️⃣ long
+➤ Size:8 bytes
+➤ Used for:Very large numbers.
+➤ Example:
+long population = 8000000000L;
+⚠ Must add L at end.
+
+5️⃣ float
+➤ Size:4 bytes
+➤ Used for:Decimal numbers (less precision)
+➤ Example:
+float pi = 3.14f;
+⚠ Must add f at end.
+
+6️⃣ double 
+➤ Size:8 bytes
+➤ Used for:
+CGPA
+Percentage
+Money
+Measurements
+
+7️⃣ char
+➤ Size:2 bytes
+➤ Used for:Single character.
+➤ Example:
+char grade = 'A';    
+
+ex;
+char ch='A';
+ int num=ch;
+ System.out.println(num);  ipo ithoda output 65 ; how?? , because In Java, char stores ASCII value internally  'A' → ASCII value is 65
+same like 'B'=66, 'a'=97;  'o'=48;
+
+
+ boolean only two conditions true or false;
+
+NON PRIMITIVE DATA TYPES 
+1.string 2. array  3.class
+
+1.string --> storing text ex: String name="Nandhini";
+
+2.array -->>Stores multiple values of same type.      Example:int[] numbers = {10, 20, 30};   Used to store list of values.
+
+3.class-->>Class is a blueprint
+
+        : TYPE CASTING :
+
+       > Converting one data type into another data type.
+Two Types of Type Casting
+1️⃣ Implicit Casting (Automatic)
+2️⃣ Explicit Casting (Manual)
+
+1.Implicit casting :
+>>Smaller type → Bigger type
+>>Java does automatically.
+
+byte → short → int → long → float → double;
+EX:
+int a = 10;
+double b = a;
+System.out.println(b);
+
+2.Explicit casting:
+Bigger type → Smaller type
+Java will NOT do automatically.
+we must use (type)
+
+EX:
+double x = 9.8;
+int y = (int) x;
+System.out.println(y);
+
+here int to char tha order but this is special case so char -> int ; this is automatically .     lets reverse means int-> char;
+
+🟡 Special Case – char and int
+char ch = 'A';
+int num = ch;
+System.out.println(num);  // output 65;
+
+LETS THE REVERSE ORDER :
+int num = 66;
+char ch = (char) num;
+System.out.println(ch);  // OUTPUT 66; BCZ 66 IS THE B VALUE;
+
