@@ -1,0 +1,40 @@
+                             OPERATORS
+1️⃣ Arithmetic Operators
++  -  *  /  %
+
+2️⃣ Relational Operators
+>  <  >=  <=  ==  !=
+
+3️⃣ Logical Operators
+&&   ||   !
+
+4️⃣ Increment & Decrement
+++   --
+
+1️⃣ Post Increment → a++
+
+👉 Use the value first
+👉 Then increase by 1
+
+Example:int a = 5;
+System.out.println(a++);
+Output:
+5
+After that:
+a = 6
+
+2️⃣ Pre Increment → ++a
+
+👉 Increase first
+👉 Then use the value
+
+Example:
+int a = 5;
+System.out.println(++a);
+Output:
+6
+
+✅ Decrement Operator (--)
+📘 Definition:
+The decrement operator (--) decreases the value of a variable by 1.
+
