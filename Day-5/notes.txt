@@ -1,0 +1,9 @@
+✅ Definition – if Statement
+
+The if statement is used to execute a block of code only when a given condition is true.
+
+If the condition is false, the block is skipped.
+
+✅ Definition – else if Ladder
+
+The else if ladder is used when we need to check multiple conditions one by one.
