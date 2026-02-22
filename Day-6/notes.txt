@@ -1,0 +1,43 @@
+🔹 for Loop
+Structure:
+for(initialization; condition; increment/decrement){
+    // code
+}
+
+🔁 What is While Loop?
+
+A while loop runs as long as the condition is true.
+while(condition){
+    // code
+}
+🌟 do-while loop
+
+Structure:
+
+do{
+    // code
+}while(condition);
+while loop → may run 0 times
+do-while loop → runs at least 1 time
+
+
+SWITCH CASE: 
+Instead of writing many if-else if statements, we use switch when we want to compare one variable with multiple possible values.
+
+🔹 Syntax:
+switch (expression) {
+    case value1:
+        // code block
+        break;
+
+    case value2:
+        // code block
+        break;
+
+    case value3:
+        // code block
+        break;
+
+    default:
+        // code if no case matches
+}
