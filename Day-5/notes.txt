@@ -7,3 +7,6 @@ If the condition is false, the block is skipped.
 ✅ Definition – else if Ladder
 
 The else if ladder is used when we need to check multiple conditions one by one.
+
+nested if else:
+Because sometimes one decision depends on another decision.
