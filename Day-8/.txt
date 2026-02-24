@@ -1,0 +1,13 @@
+today we have to do some pattern problems.
+
+first we have to note ;
+1. how many rows are there
+2. how many coloums are there
+   a. static patterns (row == coloums)
+   b.dynamic patterns(row!= coloums) --> row + coloums relate to create a formula;
+3.print what they asked ( whatever like star(*) or numbers);--->> should be print in the inside the inner loop;
+
+
+and also the array concept:
+
+find largest number, and find temperature;
