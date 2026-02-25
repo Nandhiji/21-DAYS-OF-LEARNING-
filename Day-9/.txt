@@ -1,0 +1,15 @@
+today we will see about 2D dimenstion array:
+Structure:
+
+int[][] arr = new int[3][3];
+
+3 rows  
+
+3 columns
+
+
+1️⃣ Array Traversal
+
+Traversal means:
+
+👉 Visiting every element one by one.
