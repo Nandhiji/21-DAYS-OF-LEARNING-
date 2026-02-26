@@ -1,0 +1,52 @@
+In Java: String
+
+String s = "Java";
+
+
+: Creating Strings (Very Important)
+
+There are 2 ways.
+
+🔹 Method 1 (Most Common)
+String s1 = "Hello";
+
+This is simple and recommended.
+
+🔹 Method 2 (Using new keyword)
+String s2 = new String("Hello");
+
+: Basic String Methods
+
+Now we start using string methods one by one.
+
+🔹 1️⃣ length()
+
+Counts characters.
+
+String s = "Programming";
+System.out.println(s.length());
+
+2️⃣ charAt(index)
+
+Gets character at given index.
+
+System.out.println(s.charAt(0));
+
+Output:
+
+P
+
+
+3️⃣ toUpperCase() / toLowerCase()
+System.out.println(s.toUpperCase());
+System.out.println(s.toLowerCase());
+
+
+4️⃣ equals()
+
+Very very important.
+
+String a = "Java";
+String b = "java";
+
+System.out.println(a.equals(b));
