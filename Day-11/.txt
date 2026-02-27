@@ -1,0 +1,90 @@
+DIFFERENCE BETWEEN ==  AND ()  
+
+today we will see the remaining string concept
+
+== compares memory address, Not content.
+
+equals() Do?
+It compares actual content inside the String
+
+for example:
+String a = new String("hello");
+String b = new String("hello");
+
+System.out.println(a == b);
+👉 Output: false
+
+System.out.println(a == b);
+
+👉System.out.println(a.equals(b));
+
+output: true
+
+
+-->>>substring()
+
+Used to extract part of a string.
+
+String s = "Programming";
+System.out.println(s.substring(0, 6));
+
+Output:
+Progra
+
+RULES:
+Start index included
+End index excluded
+
+-->>>indexOf()
+
+Finds position of a character or word.
+
+String s = "Engineering";
+System.out.println(s.indexOf("g"));
+
+Output:
+2  -->> IF NOT FOUND RETURNS -1 
+
+--->>>replace()
+String s = "Java is hard";
+System.out.println(s.replace("hard", "easy"));
+
+Output:
+Java is easy
+
+
+-->>>>> toUpperCase() & toLowerCase()
+String s = "java";
+System.out.println(s.toUpperCase());
+
+Output:
+JAVA
+
+
+--->>> trim()
+
+Removes extra spaces from beginning and end.
+String s = "  hello  ";
+System.out.println(s.trim());
+Output:
+hello
+
+Very useful for user input cleaning.
+
+-----------------------------------------------
+String Immutability (Concept)
+
+Once created, String cannot change.
+
+Example:
+
+String s = "java";
+s.concat(" programming");
+
+Original string won’t change.
+
+
+REVERSE A STRING:
+
+StringBuilder s1=new StringBuilder("jellp");
+System.out.println(s1.reverse());
