@@ -1,0 +1,27 @@
+What is a Method?
+
+A method is a block of code that performs a specific task. Instead of writing the same code again and again, you put it in a method and call it whenever needed.
+
+Why use methods?
+Reuse code
+
+Makes programs easier to read
+
+Helps in debugging
+--------------------------
+Method Syntax
+returnType methodName(parameters) {
+    // code to execute
+    return value; // if returnType is not void
+}
+
+returnType → type of value the method gives back (int, String, etc.). Use void if it doesn’t return anything.
+
+methodName → name of the method
+
+parameters → inputs you give to the method
+
+1.no parameters, no return values ;
+2.with parameters(),no return value;
+3.no parameters but return value
+4.with parameters , with return values
