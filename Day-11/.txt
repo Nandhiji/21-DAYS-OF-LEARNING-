@@ -88,3 +88,8 @@ REVERSE A STRING:
 
 StringBuilder s1=new StringBuilder("jellp");
 System.out.println(s1.reverse());
+
+TRAVERSE A STRING:
+
+String s=new String();
+s.charAt(i);
