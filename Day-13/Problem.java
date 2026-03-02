@@ -42,15 +42,18 @@ for(int i=0;i<s.length();i++){
     System.out.println("consonents"+consonents++);*/
 
 int space=0;
+int word=0;
 for(int i=0;i<s.length();i++){
     char ch=  s.charAt(i);
-    if(ch ==' '){
-         space=space+1;
+    if(ch =!' '){
+         //space=space+1;
+         //word=space+1;
          
     }
 
 }
  System.out.println(space);
+ System.out.println(word);
 
     }
 }

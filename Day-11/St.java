@@ -7,7 +7,7 @@ public class St{
 
           StringBuilder s1=new StringBuilder("jellp");
          
-         // System.out.println(s1.reverse());
+         System.out.println(s1.reverse());
           System.out.println(s1);
           
 
