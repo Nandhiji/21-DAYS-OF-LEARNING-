@@ -1,0 +1,64 @@
+ 1..METHOD OVERLOADIG:
+
+ same method name but different parameters.
+ ex;
+ add(int a, int b)
+add(int a, int b, int c)
+add(double a, double b)   // here method name add(same), different parameters.
+
+2..STATIC VS INSTANCE METHOD:
+
+INSTANCE METHOD needs object : we already seen about it;
+ex: 
+class obj=new class();
+obj.add();
+
+STATIC METHOD:
+
+dont need object :
+ex.
+add();
+
+-->>>Important Rule
+
+Inside main() method:
+
+public static void main(String[] args)
+
+main is STATIC.
+
+That’s why:
+
+👉 You cannot directly call non-static method inside main.
+
+void display() {
+    System.out.println("Hi");
+}
+
+public static void main(String[] args) {
+    display();  // ❌ Error
+}
+
+
+3..Method Calling Another Method:
+
+In real software, we don’t write everything inside one method.
+
+We break logic into small parts:
+
+One method → calculate
+
+One method → print
+
+One method → validate
+
+One method → process
+
+This makes code:
+✔ Clean
+✔ Reusable
+✔ Easy to debug
+
+
+4..RECURSION:
+When a method calls itself, it is called recursion.
