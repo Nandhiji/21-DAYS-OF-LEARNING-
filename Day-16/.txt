@@ -64,3 +64,14 @@ TYPES OF CONSTRUCTOR:
         System.out.println("PARAMETERIZED");
     }
  }
+
+
+ IMPORTANT NOTE: 
+ why we are using constructor bcz in method also do the same work like constructor. then why we need constructor??
+ the answer is : in method we have to call a obj, but in constructor we dont need to call a constructor.
+
+ constructor forces you to give required data. 
+ ex. 
+ Constructor(string a, int n)
+  in java forces u to pass the value for a and n.
+  u cannot create obj without it.
