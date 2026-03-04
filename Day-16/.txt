@@ -1,0 +1,66 @@
+today we seen about what are all topics we covered so far. anyother things is missing ah ? , lets recall the one topic reverse array. 
+
+
+CONSTRUCTOR:
+ A CONSTRUCTOR is a special method inside  a class .
+ -->> it runs automatically when an object is created.
+ -->> used to initialize variables.
+
+ IMPORTANT RULES:
+
+1. constructor name must be same as class name.
+2.it has NO return type  (even void ).
+3.it runs automatically once the object is created.
+
+TYPES OF CONSTRUCTOR:
+1.DEFAULT CONSTRUCTOR
+2.PARAMETERIZED CONSTRUCTOR
+
+1.DEFAULT CONSTRUCTOR:
+ 
+ constructor(){
+    System.out.println("hi");
+ }
+
+ 2.PARAMETERIZED CONSTRUCTOR;
+
+ constructor(String n, int a){
+   name=n;
+   age=a;      // used to pass values during object creation.
+
+ }
+
+
+ THIS KEYWORD:
+
+ used when varible name and parameter name are same:
+ ex;
+
+ class constructor{
+    String name;
+
+    constructor(String name){
+        this.name=name;
+    }
+ }
+
+
+ CONSTRUCTOR OVERLOADIG:
+
+ Constructor()
+ Constructor(int x)
+
+ same class , different parameters.
+
+
+ CONSTRUCTOR CHAINING:
+
+ class Constructor{
+    Constructor(){
+        this(10);
+        System.out.println("DEFAULT");
+    }
+    Constructor(int x){
+        System.out.println("PARAMETERIZED");
+    }
+ }
