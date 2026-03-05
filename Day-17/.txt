@@ -1,0 +1,148 @@
+today we will see about commend line arguments.
+
+1.COMMAND LINE ARGUMENTS:
+
+ public static void main(String[]args)
+
+String[] → It is an array of strings
+
+args → It stores the values passed from the command line.
+So args is basically a container that stores input values when the program starts.
+
+Why is it an Array?
+
+Because we can pass multiple values when running the program.
+
+Example in terminal:
+
+java Test Sumathi 19 Chennai.
+
+Now the values will be stored like this:
+
+Index	Value
+args[0]	"Sumathi"
+args[1]	"19"
+args[2]	"Chennai"
+
+So we access them using index.
+
+⚠️ Important Points
+
+1️⃣ Command line arguments are always stored as String
+
+2️⃣ If you need numbers, you must convert them.
+
+Example:
+
+int a = Integer.parseInt(args[0]);
+
+💡 Where It Is Used
+
+In real applications like:
+
+Running Java programs from terminal
+
+Passing configuration values
+
+Automation scripts
+
+Build tools
+-------------------------------
+
+2.WRAPPER CLASS;
+
+The Main Reason for Wrapper Classes
+
+Java has two types of data:
+
+1️⃣ Primitive types
+
+int
+double
+char
+boolean
+
+These are not objects.
+
+2️⃣ Objects (Classes)
+
+Example:
+
+String
+Scanner
+ArrayList
+
+These are objects.
+
+But many parts of Java only work with objects, not primitives.
+
+So Java created Wrapper Classes to convert primitives into objects.
+
+THESE ARE THE TOPICS WE LEARNED:
+
+1️⃣ String → number conversion
+
+Integer.parseInt()
+
+2️⃣ Number → String conversion
+
+Integer.toString()
+
+3️⃣ Utility methods
+
+Integer.max()
+Integer.min()
+
+3.What is an Exception?
+
+An exception is an error that happens while the program is running.
+
+Example:
+int a = 10;
+int b = 0;
+
+System.out.println(a / b);
+
+This will cause:
+
+ArithmeticException: / by zero
+
+Because division by zero is not allowed.
+
+So the program stops suddenly ❌.
+
+2️⃣ Why We Use Exception Handling
+
+We use exception handling to:
+
+prevent program crash
+
+handle errors safely
+
+continue program execution
+3️⃣ Basic Structure
+
+Java uses try–catch.
+
+try{
+    // risky code
+}
+catch(Exception e){
+    // error handling code
+}
+
+Meaning:
+
+Part	Purpose
+try	    code that may cause error
+catch	handles the error
+
+5️⃣ Important Exception Types
+
+Here are some common ones:
+
+Exception	                       Reason
+ArithmeticException         	      divide by zero
+NullPointerException	               using null object
+ArrayIndexOutOfBoundsException	       wrong array index
+InputMismatchException	              wrong input type
