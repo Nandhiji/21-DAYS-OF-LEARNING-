@@ -1,0 +1,29 @@
+1️⃣ What is OOP?
+
+OOP is a way of writing programs using objects and classes.
+
+Instead of writing everything in one place, we organize the program like real-world objects.
+
+1️⃣ What is a Class?
+
+A class is a blueprint (design).
+
+It defines:
+variables (data)
+methods (functions)
+
+
+2️⃣ What is an Object?
+An object is a real instance of a class.
+
+We create an object using:
+
+new
+
+Example:
+Student s1 = new Student();
+
+IMPORTANT NOTES:
+
+Class = blueprint of car
+Object = real car
