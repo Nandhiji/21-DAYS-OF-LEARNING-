@@ -1,0 +1,120 @@
+3️⃣ Accessing Object Data
+
+We use the dot operator (.) to access variables and methods.
+
+Example
+Student s1 = new Student();
+
+s1.name = "Ram";
+s1.mark = 90;
+
+s1.display();
+
+4️⃣ Multiple Objects
+
+We can create multiple objects from the same class.
+
+Student s1 = new Student();
+Student s2 = new Student();
+
+Memory concept:
+
+s1 → Student Object 1
+s2 → Student Object 2
+Each object stores different data.
+
+5️⃣ Reference Variables:
+A reference variable stores the address of an object.
+
+Example:
+
+Student s1;
+
+This only declares a reference variable, it does not create an object.
+
+Object is created only when using:
+new Student();
+
+6️⃣ Copying References
+
+Example:
+
+Student s1 = new Student();
+Student s2 = s1;
+
+Memory idea:
+
+s1 ──┐
+     ├──→ Student Object
+s2 ──┘
+
+Both references point to the same object.
+
+Changing one affects the other.
+
+Example:
+
+s1.name = "Ram";
+System.out.println(s2.name);
+
+Output:
+
+Ram
+
+7️⃣ Comparing Objects (==)
+
+== compares references (memory location).
+
+Example:
+
+Student s1 = new Student();
+Student s2 = new Student();
+
+System.out.println(s1 == s2);
+
+Output:
+
+false
+Because they are different objects.
+
+8️⃣ Same Reference Comparison
+Student s1 = new Student();
+Student s2 = s1;
+
+System.out.println(s1 == s2);
+
+Output:
+
+true
+
+Both variables point to same object.
+
+9️⃣ Null Reference
+Student s1 = null;
+
+This means:
+
+s1 → no object
+
+If we try:
+
+s1.display();
+
+It causes:
+
+NullPointerException (Runtime Error)
+
+
+🔟 Garbage Collection Concept
+
+An object is removed from memory when no references point to it.
+
+Example:
+
+Student s1 = new Student();
+Student s2 = s1;
+
+s1 = null;
+s2 = null;
+
+Now the object becomes eligible for Garbage Collection.

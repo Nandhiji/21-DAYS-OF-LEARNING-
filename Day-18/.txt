@@ -15,10 +15,7 @@ methods (functions)
 
 2️⃣ What is an Object?
 An object is a real instance of a class.
-
-We create an object using:
-
-new
+object are created using new keyword.
 
 Example:
 Student s1 = new Student();
@@ -27,3 +24,8 @@ IMPORTANT NOTES:
 
 Class = blueprint of car
 Object = real car
+
+IMPORTANT RULE:
+
+Object is created only when new keyword is used.
+new ClassName()
