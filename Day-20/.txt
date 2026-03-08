@@ -1,0 +1,210 @@
+1️⃣ Encapsulation
+What is Encapsulation?
+
+Encapsulation means: Hiding data and controlling how it is accessed.
+
+Why Do We Need Encapsulation?
+So the problem is:
+Anyone can change the variable to any value
+
+That is dangerous.
+
+-->>>How Encapsulation Solves This
+
+We make the variable private.
+
+class BankAccount{
+    private int balance;
+}
+
+Now no other class can directly change it.
+
+
+2️⃣ Inheritance
+What is Inheritance?
+
+Inheritance means:
+
+One class can use the properties and methods of another class.
+In simple words:
+Child class gets features from Parent class
+
+
+3️⃣ Polymorphism
+What is Polymorphism?
+
+Polymorphism means:
+
+One thing → many forms
+
+In Java, it means:One method name can behave differently
+
+Two Types of Polymorphism in Java
+1️⃣ Compile-Time Polymorphism
+
+Also called:  Method Overloading
+
+Example:
+
+class Calculator{
+
+    int add(int a, int b){
+        return a + b;
+    }
+
+    int add(int a, int b, int c){
+        return a + b + c;
+    }
+
+}
+
+Usage:
+
+Calculator c = new Calculator();
+
+System.out.println(c.add(2,3));
+System.out.println(c.add(2,3,4));
+
+Output:
+
+5
+9
+
+Same method name:
+
+add()
+
+But different parameters.
+
+2️⃣ Runtime Polymorphism
+
+Also called:
+
+Method Overriding
+
+Example:
+
+class Animal{
+    void sound(){
+        System.out.println("Animal sound");
+    }
+}
+
+class Dog extends Animal{
+    void sound(){
+        System.out.println("Dog barking");
+    }
+}
+
+Usage:
+
+Animal a = new Dog();
+a.sound();
+
+Output:
+
+Dog barking
+
+Because Dog overrides the method.
+
+
+4️⃣ Abstraction
+What is Abstraction?
+
+Abstraction means:
+
+Hide the implementation and show only the functionality.
+
+Simple meaning:
+
+User knows WHAT to do
+User doesn't know HOW it works
+How Java Achieves Abstraction
+
+Java provides two tools:
+
+1️⃣ Abstract Class
+2️⃣ Interface
+
+We start with Abstract Class.
+
+Abstract Class:
+
+An abstract class is a class that cannot create objects.
+
+Example:
+
+abstract class Animal{
+
+    abstract void sound();
+
+}
+
+Here:
+
+sound()
+
+has no body.
+
+It only tells:
+
+Every animal must have a sound()
+
+But it doesn't say how.
+
+Child Classes Implement It:
+
+class Dog extends Animal{
+
+    void sound(){
+        System.out.println("Dog barking");
+    }
+
+}
+Child Classes Implement It
+class Dog extends Animal{
+
+    void sound(){
+        System.out.println("Dog barking");
+    }
+
+}
+
+Important Rules
+1️⃣ Abstract class cannot create object
+Important Rules
+2️⃣ Abstract methods must be implemented in child class
+
+Example:
+
+sound()
+
+must be implemented.
+
+Structure
+Abstract Class → Blueprint
+Child Class → Actual Implementation
+--------------------------------------------
+
+What is an Interface?
+
+An interface in Java is used for 100% abstraction.
+
+It is like a contract that tells a class:
+
+"If you implement me, you must define my methods."
+
+But the interface does NOT contain the method body.
+
+Basic Syntax
+interface Animal{
+    void sound();
+}
+
+Here:
+
+sound() has no body
+
+It only declares the method
+
+So any class that uses this interface must implement sound().
