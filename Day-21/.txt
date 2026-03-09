@@ -1,0 +1,37 @@
+1️⃣ static Variable
+
+A static variable belongs to the class, not to individual objects.
+
+Key Idea
+static = shared by all objects
+Key Idea
+Only ONE copy exists for the entire class
+
+
+Final Variable
+Definition
+
+A final variable cannot be changed after it is assigned.
+
+Key Idea
+final = constant value
+
+
+🔹 Static + Final Together
+
+When we combine both:
+
+static final
+
+Meaning:
+
+constant value shared by the whole class
+Example
+class Circle{
+    static final double PI = 3.14;
+}
+
+Explanation:
+
+PI cannot change
+PI is shared by all objects
