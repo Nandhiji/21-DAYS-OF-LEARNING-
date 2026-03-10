@@ -33,7 +33,7 @@ public class Oops{
     }
 }
 
-Game maximum level:
+Game maximum level;
 public class Oops{
 
     final int MAX_LEVEL= 5;
