@@ -56,7 +56,7 @@ FIND SMALL AND MEDIUM AND LARGE TO GIVE THE NUMBER:
         System.out.println("not divisible by 3 or 5");
      }
 
-FIND EVEN OR ODD:
+FIND LEAP YEAR OR NOT:
 
     if(n%4==0 && n%100!==0) || (n%400==0){
         System.out.println(" leap year");
