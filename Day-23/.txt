@@ -1,0 +1,39 @@
+today we saw a static method topic :
+this keyword inside the class - it will give a error 
+
+static block ;
+
+static{
+
+}
+it will run only once , if i create multiple obj but it will run at onlu once , 
+first one obj create panita apo matum ulla pogum and then ni evlo obj create pananlum athu static block ulla pogathu.....
+
+
+
+important note:
+
+in inner class la outside class cannot be static ;
+--------------------------
+System-- class
+out--variable
+println---method
+
+
+static keyword in brief :
+1️⃣ What is static in Java?
+
+Simple definition:
+
+static means the variable or method belongs to the CLASS
+not to the OBJECT
+
+Normal variables belong to objects.
+static variables belong to the class itself.
+
+⚡ Super Important Rule
+
+Inside a static method you cannot directly use non-static variables.
+
+.
+
