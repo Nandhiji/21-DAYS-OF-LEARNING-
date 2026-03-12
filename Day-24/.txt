@@ -1,0 +1,147 @@
+1..final keyword:
+-------------------
+it cannot be change 
+
+final = cannot change
+
+Once a value is final, you cannot modify it again.
+
+Step 2️⃣ — Final Variable
+----------------------------
+
+Example:
+
+class Test{
+    final int x = 10;
+
+    public static void main(String[] args){
+        Test obj = new Test();
+        System.out.println(obj.x);
+    }
+}
+
+Output:
+
+10
+
+
+What happens if we try to change it?
+
+Example:
+
+class Test{
+    final int x = 10;
+
+    void change(){
+        x = 20;
+    }
+}
+
+❌ This will give compile time error.
+
+Reason:
+
+final variable cannot be reassigned
+------------------------------------------
+What happens if we try to change it?
+
+Example:
+
+class Test{
+    final int x = 10;
+
+    void change(){
+        x = 20;
+    }
+}
+
+❌ This will give compile time error.
+
+Reason:
+
+final variable cannot be reassigned.
+
+Why do we use final?
+
+To protect important values.
+
+Example:
+
+final double PI = 3.14;
+
+We don't want someone to change it like:
+
+PI = 10  ❌
+----------------------------------------------
+Compile Time Error :Error happens before program runs.
+
+Example:
+final int x = 10;
+x = 20;   // ❌ compile error
+
+Compiler stops the program.
+---------------------------
+Runtime Error:Error happens while program is running.
+
+Example:
+
+String s = null;
+System.out.println(s.length());
+
+Program starts running, then crashes with:
+
+NullPointerException.
+
+
+3.. Final Method
+
+Meaning:
+
+Method cannot be overridden in child class
+
+Example:
+
+class Animal{
+    final void sound(){
+        System.out.println("Animal sound");
+    }
+}
+
+class Dog extends Animal{
+    void sound(){   // ❌ Error
+        System.out.println("Dog barking");
+    }
+}
+
+Why?
+
+Because the parent method is final, so the child cannot change it.
+
+
+3️⃣ Final Class
+
+Meaning:
+
+Class cannot be inherited
+
+Example:
+
+final class Animal{
+    void eat(){
+        System.out.println("Animal eats");
+    }
+}
+
+❌ Not allowed:
+
+class Dog extends Animal{
+}
+
+This will give compile time error.
+
+
+
+Final Type	Meaning ---- important notes:
+final variable --	value cannot change
+final method --	cannot override
+final class--	cannot inherit
