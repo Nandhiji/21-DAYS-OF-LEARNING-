@@ -1,0 +1,36 @@
+                     MODIFIERS:
+
+1️⃣ Private modifier:
+
+Meaning:
+
+Accessible only inside the same class
+Why we use it:
+
+To protect data (Encapsulation)
+
+2.protected modifier:
+Same package + child class can access.
+
+
+3.public modifier:
+ Accessible from anywhere
+
+
+4..Default Access Modifier
+Meaning:
+
+If you do not write any modifier, Java automatically uses default access.
+
+Example:
+
+class Test{
+    int x = 10;   // default access
+}
+
+Rule of Default Modifier :
+Accessible only inside the same package
+
+Other packages cannot access it.
+
+
