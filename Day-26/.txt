@@ -1,0 +1,115 @@
+1️⃣ What is an Exception?
+
+An exception is an error that happens while the program is running.
+
+So the program stops suddenly.
+
+ex. here one program so there a=10,b=0; inthat value the condition was a/b;
+
+so the program gave a error , that scenario the exception handling will come . it will throw a arithimeticexception.
+
+here;
+10 / 0
+But division by zero is not allowed.
+
+So Java throws:
+
+ArithmeticException
+--------------------------------
+Why Exception Handling is Important
+
+Without handling:
+
+Program crashes ❌
+
+With handling:
+
+Program continues running ✅
+
+Why Exception Handling is Important
+Types of Common Exceptions:
+
+Exception	                            Example
+ArithmeticException	                       divide by zero
+NullPointerException	                   using null object
+ArrayIndexOutOfBoundsException	           accessing wrong array index
+NumberFormatException                   	converting wrong string to number
+
+
+This is how Java handles exceptions.
+
+Example:
+
+try{
+   // risky code
+}
+catch(Exception e){
+   // handle error
+}
+
+finally block:
+
+Now we move to finally block.
+
+Structure:
+
+try{
+   risky code
+}
+catch(Exception e){
+   handle error
+}
+finally{
+   always runs
+}
+
+The finally block runs whether exception occurs or not.
+
+Next Important Part of Exception Handling
+
+Now we move to finally block.
+
+Structure:
+
+try{
+   risky code
+}
+catch(Exception e){
+   handle error
+}
+finally{
+   always runs
+}
+
+The finally block runs whether exception occurs or not.Next Important Part of Exception Handling
+
+Now we move to finally block.
+
+Structure:
+
+try{
+   risky code
+}
+catch(Exception e){
+   handle error
+}
+finally{
+   always runs
+}
+
+The finally block runs whether exception occurs or not.Next Important Part of Exception Handling
+
+Now we move to finally block.
+
+throw keyword:
+Next Concept in Exception Handling
+
+Now the next topic is throw keyword.
+
+This is used when we want to manually create an exception.
+ex:
+Example:
+
+if(balance < withdrawAmount){
+    throw new ArithmeticException("Insufficient balance");
+}
