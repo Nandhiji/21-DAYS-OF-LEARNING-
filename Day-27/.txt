@@ -1,0 +1,35 @@
+
+1️⃣ What is throws?
+
+throws is used in a method declaration to tell Java:
+
+This method may produce an exception.
+Whoever calls this method must handle it.
+
+So it is like a warning.
+
+1️⃣ What is throws?
+
+throws is used in a method declaration to tell Java:
+
+This method may produce an exception.
+Whoever calls this method must handle it.
+
+So it is like a warning
+1️⃣ What is throws?
+
+throws is used in a method declaration to tell Java:
+
+This method may produce an exception.
+Whoever calls this method must handle it.
+
+So it is like a warning.
+
+2️⃣ Simple Structure
+returnType methodName() throws ExceptionType{
+    // code
+}
+
+Example:
+void readFile() throws IOException{
+}
