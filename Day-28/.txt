@@ -1,0 +1,40 @@
+today i recalled the prime no and solve the inheritence from oops..
+
+Next Best Topic (Very Important)
+👉 Collections Framework (Java)
+
+This is the next big step.
+
+📚 Why Collections?
+
+Arrays have limitations:
+
+Fixed size ❌
+
+Collections:
+1.dynamic size
+2.used in real projects
+3.easy operations
+
+
+Step 1: What is ArrayList?
+
+👉 ArrayList = Dynamic Array
+
+Normal array:
+
+int arr[] = new int[3]; // fixed size ❌
+
+ArrayList:
+
+ArrayList<Integer> list = new ArrayList<>(); // dynamic size ✅
+
+✔ You can add unlimited elements
+✔ Size increases automatically
+
+Step 2: How to Create ArrayList
+import java.util.*;
+
+ArrayList<Integer> list = new ArrayList<>();
+
+👉 Integer (not int) because ArrayList stores objects
