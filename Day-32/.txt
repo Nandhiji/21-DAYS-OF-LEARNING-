@@ -1,0 +1,52 @@
+
+step:1 
+
+What is HashMap?
+
+👉 Stores data in key → value pairs  ,, HashMap na key --> value storage
+
+Key → Value
+
+Step 2: How to Create
+import java.util.*;
+
+HashMap<String, Integer> map = new HashMap<>();
+
+👉 String = key
+👉 Integer = value
+
+Step 3: Add Data (put)
+map.put("Ram", 90);
+map.put("Sita", 85);
+map.put("John", 75);
+
+Now map:
+
+{Ram=90, Sita=85, John=75}
+📚 Step 4: Get Value
+System.out.println(map.get("Ram"));
+
+Output:
+
+90
+📚 Step 5: Key Important Rule
+Keys → must be UNIQUE ❗  
+Values → can repeat
+
+📚 Step 6: Update Value
+map.put("Ram", 95);
+
+Now:
+
+{Ram=95, Sita=85, John=75}
+
+👉 Old value replaced
+
+📚 Step 7: Check Key
+map.containsKey("Ram"); // true
+
+📚 Step 8: Remove
+map.remove("John");
+
+📚 Step 9: Size
+map.size();
