@@ -1,4 +1,4 @@
-/*
+
 import java.util.*;
 
 public class Problem{
@@ -13,6 +13,11 @@ public class Problem{
             map.put("A",1);
             map.put("B",3);
             map.put("A",4);
+
+            for(String key: map.keySet()){
+                System.out.println(key + ": " + map.get(key));
+            }
+
         for(Map.Entry<String, Integer> e: map.entrySet()){
             
             System.out.println(e.getKey() + ": " + e.getValue());
@@ -20,23 +25,27 @@ public class Problem{
     }
 }*/
 
+WORD FREQUENCY COUNTER PROBLEM: 
 import java.util.*;
 public class Problem{
     public static void main(String[]args){
         Scanner sc=new Scanner(System.in);
         String str=sc.nextLine();
-        int count=0;
+       
         HashMap<String,Integer> map=new HashMap<>();
-        String[] words =str.split(" ");
-
-    for(String key: map.keySet()){
-        if(map.containsKey(words)){
-            count++;
+        
+String[] words =str.split(" ");
+    for(String word: words){
+        if(map.containsKey(word)){
+           map.put(word,map.get(word)+1);
         }
         else{
-            count=1;
+          map.put(word,1);
         }
     }
-    System.out.println(count);
+    for(String key: map.keySet()){
+        System.err.println(key+":" + map.get(key));
+
+    }
     }
 }

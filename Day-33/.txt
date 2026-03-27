@@ -1,0 +1,10 @@
+i solved one problem remove duplicates in hashset la 
+ipo hashset la remove pana order change aguthu , 
+but i dont wanna change order , so i used LinkedHashSet.. it will not change order 
+
+we use count the frequency , map.contains(Key)
+
+
+  for(String Key:map.keySet() ){
+            System.err.println(Key+ map.get(Key));
+  }  we use this for the output
