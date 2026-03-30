@@ -1,0 +1,6 @@
+today we solved second largest number problem:
+2.reverse a sentence
+palindrome
+prime
+sum of digit
+count of even, odd
