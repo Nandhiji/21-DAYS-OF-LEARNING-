@@ -3,24 +3,36 @@ import java.util.*;
 class Test{
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-         String location=sc.nextLine();
-        String time=sc.nextLine();
-int amount=sc.nextInt();
+        int amount=sc.nextInt();
+        String location=sc.next();
+        String time=sc.next();
+        int failed_attempts=sc.nextInt();
 
-int failed_attempts=sc.nextInt();
-int risk=0;
-if(amount>50000){
-   risk++;
-}
-else if(location.equals("new")){
-    risk++;
-   }
- else if(time<=00:00 && time>=05:00){
+        if(failed_attempts>=3){
+            System.out.println("LOCK");
+        }
 
-   }
- else if(failed_attempts>=3){
-    System.out.println("LOCKED");
-   }
+        int risk=0;
 
-    }
+        if(amount>50000){
+            risk++;
+        }
+        if(location.equals("new")){
+            risk++;
+        }
+         
+         String[] parts=time.split(":");
+         int hour=Integer.parseInt(parts[0]);
+        if(hour >=0 && hour <5){
+            risk++;
+        }
+
+        if(risk>=2){
+            System.out.println("HIGH");
+        }
+        else{
+            System.out.println("LOW");
+        }
+             }
+
 }
