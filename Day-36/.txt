@@ -1,0 +1,7 @@
+today solve exception handling problem:
+1. safe division program
+2.and solve the divisible by zero program
+3.inputmismatch program 
+4.ArrayIndexOutOfBoundsException program 
+5.invalid input program
+

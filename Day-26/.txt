@@ -29,11 +29,11 @@ Program continues running ✅
 Why Exception Handling is Important
 Types of Common Exceptions:
 
-Exception	                            Example
+Exception	                                   Example
 ArithmeticException	                       divide by zero
-NullPointerException	                   using null object
+NullPointerException	                       using null object
 ArrayIndexOutOfBoundsException	           accessing wrong array index
-NumberFormatException                   	converting wrong string to number
+NumberFormatException                   	  converting wrong string to number
 
 
 This is how Java handles exceptions.
