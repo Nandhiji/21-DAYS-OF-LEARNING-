@@ -1,0 +1,13 @@
+StringBuilder:
+normal  string means thats - immutable 
+StringBuilder means - mutable ( we can change easily)
+
+Structure :
+
+StringBuilder sb=new StringBuilder();
+
+we can use the methods are:
+sb.append();
+sb.reverse();
+sb.delete();
+sb.insert();
