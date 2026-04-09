@@ -11,7 +11,7 @@ String s=sc.next();
 
     }
 }*/
-left rotation:
+//left rotation:
 import java.util.*;
 class Problem{
     public static void main(String[] args) {
