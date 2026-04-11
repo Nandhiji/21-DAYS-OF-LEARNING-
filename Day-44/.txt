@@ -1,0 +1,4 @@
+searching and sorting :
+what is searching ? 
+find a element in array or list
+1.linear search - check each element one by one
