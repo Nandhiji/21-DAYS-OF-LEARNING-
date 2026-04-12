@@ -1,20 +1,19 @@
 /*import java.util.*;
-class Linear{
+class Practice{
     public static void main(String[]args){
         Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();
         ArrayList<Integer> list=new ArrayList<>();
-
-        for(int i=0;i<n;i++){
+        for (int i=0;i<n;i++){
             list.add(sc.nextInt());
         }
-        System.out.println("enter the found element:");
+System.out.println("enter the found element:");
         int target=sc.nextInt();
-        boolean found=false;
 
+        boolean found=false;
         for(int i=0;i<list.size();i++){
-            if(list.get(i)== target){
-                System.out.println("found at index"+i);
+            if(list.get(i) == target){
+                System.out.println("the element  found"+i);
                 found=true;
                 break;
             }
@@ -22,29 +21,31 @@ class Linear{
         if(!found){
             System.out.println("not found");
         }
-    }
-}
-*/
+            
+        }
+        }
+    */
+   Binary search;
 import java.util.*;
-class Linear{
+   class Practice{
     public static void main(String[]args){
         Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();
-        ArrayList<Integer> list= new ArrayList<>();
+        ArrayList<Integer> list=new ArrayList<>();
 
-        for(int i=0;i<n;i++){
-            list.add(sc.nextInt());
-        }
-        Collections.sort(list);
-        System.out.println("enter the found element is:");
-        int target=sc.nextInt();
-        int start=0;
-        int end=n-1;
-        boolean found=false;
-        while(start <= end){
+    for (int i=0;i<n;i++){
+        list.add(sc.nextInt());
+
+    }
+
+    int target=sc.nextInt();
+    int start=0;
+    int end=n-1;
+    boolean found=false;
+    while(start <= end){
         int mid=(start+end)/2;
         if(target==list.get(mid)){
-            System.out.println("found");
+            System.out.println("the element is found");
             found=true;
             break;
         }
@@ -54,9 +55,11 @@ class Linear{
         else{
             end=mid-1;
         }
-        }
-        if(!found){
-            System.out.println("not found");
-        }
     }
-}
+    if(!found){
+        System.out.println("the element is not found");
+    }
+   
+        
+    }}
+    
