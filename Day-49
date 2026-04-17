@@ -1,0 +1,68 @@
+//convert a fahrenheit to celsius and celsius to fahrenheit:
+import java.util.*;
+class Task1{
+    public static void main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the temperature value:");
+        int Temp=sc.nextInt();
+        System.out.println("enter the unit(c/f):");
+        char ch=sc.next().charAt(0);
+
+        double result;
+
+        if(ch=='c' || ch=='C'){
+            result=(Temp*9/5)+32;
+            System.out.println("temperature in fahrenheit:"+result);
+        }
+        else if(ch=='f' || ch=='F'){
+            result=(Temp-32)*5/9;
+            System.out.println("temperature in celsius:"+result);
+        }
+        else{
+            System.out.println("invalid unit");
+        }
+    }
+}
+//find the palindrome or not:
+import java.util.*;
+class Task2{
+    public static void main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the word");
+        String s=sc.nextLine();
+
+        s=s.replaceAll("[^a-zA-Z0-9]"," ").toLowerCase();
+        
+        StringBuilder sb=new StringBuilder(s);
+        String result=sb.reverse().toString();
+        System.out.println(result);
+
+        if(result.equals(s)){
+            System.out.println("palindrome");
+        }
+        else{
+            System.out.println("not a palindrome");
+        }
+    }
+}
+//find the average of n subject marks:
+import java.util.*;
+class Task3{
+    public static void main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the number of subject");
+        int n=sc.nextInt();
+        System.out.println("enter the values");
+        int[] arr=new int[n];
+        for(int i=0;i<n;i++){
+            arr[i]=sc.nextInt();
+        }
+        int sum=0;
+        for (int i=0;i<n;i++){
+            sum+=arr[i];
+        }
+        double average=(double)sum/n;
+        System.out.println("average is "+average);
+    
+    }
+}
