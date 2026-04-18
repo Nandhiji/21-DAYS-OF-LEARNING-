@@ -1,0 +1,13 @@
+one new method i learned today
+swap method i know using third variable 
+but i dont know without third variable
+how it is means??
+first value is =A;
+second value is=B;
+
+here 
+A=A+B;
+B=A-B;
+A=A-B;
+
+so this is the method without using third variable
